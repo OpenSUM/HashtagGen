@@ -1,0 +1,7 @@
+tensorflow-gpu==1.11
+numpy==1.14.2
+gensim==3.4.0
+argparse==1.4.0
+pyyaml==3.12
+#pyltp==0.2.1
+rouge

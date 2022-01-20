@@ -1,0 +1,63 @@
+{
+  "batch_size": 64,
+  "epochs": 50,
+  "encoder_seq_length": 166,
+  "decoder_seq_length": 10,
+  "bert_learning_rate": 1e-4,
+  "other_learning_rate": 0.001,
+  "theta": 0.99,
+
+  "encoder_output_length": 11,
+  "top_k": 10,
+  "segment_number": 15,
+  "segment_length": 10,
+  "similarity_function": ["manhattan","euclidean","cos","mahalanobis"],
+
+  "gradual_unfreezing": false,
+  "discriminative_fine_tuning": false,
+
+  "pointer_initializer": "xavier",
+  "use_pointer": false,
+  "coverage": false,
+  "trim_attention": false,
+  "align_layers": false,
+
+  "encoder_trainable_layers": -1,
+  "trainable_layers": -1,
+  "embedding_trainable": true,
+  "pooler_layer_trainable": true,
+  "masked_layer_trainable": true,
+  "attention_layer_trainable": true,
+
+  "train_src": "./data/topic_ltp/new4_train.src.token",
+  "train_dst": "./data/topic_ltp/new4_train.dst.token",
+  "eval_src": "./data/topic_ltp/new4_validation.src.token",
+  "eval_dst": "./data/topic_ltp/new4_validation.dst.token",
+  "test_src": "./data/topic_ltp/new4_test.src.token",
+  "test_dst": "./data/topic_ltp/new4_test.dst.token",
+  "init_checkpoint": "./experiments2021/checkpoint_2021-05-06-23-52-29",
+  "vocab_file": "./bert/topic_ltp/vocab.txt",
+
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+
+  "num_hidden_layers": 12,
+  "hidden_layers_filter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 15,
+  "vocab_size": 30381,
+  "substr_prefix": "##",
+  "do_lower": true
+}

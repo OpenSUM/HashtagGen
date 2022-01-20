@@ -5,7 +5,25 @@
 
 // Model Description
 
-### The code will be released soon.
+[comment]: <> (### The code will be released soon.)
+
+
+## Usage
+
+step 1： download requirements
+
+```
+conda create -n topic python=3.6
+pip install -r requirements.txt
+source activate topic
+```
+
+step 2: train/test/eval model
+
+1. `./run.sh` gives the commands of train/test/eval model
+2. `./bert/[sample|topic|topic_ltp]/bert_config.json` gives the train config files, you can follow our configurations.
+3. `./bert/[sample|topic|topic_ltp]/vocab.txt` gives the bert vocabulary files
+4. you can read `./run.py` to get more usage of our code.
 
 
 ## Data
