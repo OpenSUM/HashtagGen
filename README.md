@@ -20,15 +20,31 @@ source activate topic
 
 step 2: train/test/eval model
 
-1. `./run.sh` gives the commands of train/test/eval model
-2. `./bert/[sample|topic|topic_ltp]/bert_config.json` gives the train config files, you can follow our configurations.
-3. `./bert/[sample|topic|topic_ltp]/vocab.txt` gives the bert vocabulary files
-4. you can read `./run.py` to get more usage of our code.
+1. train the model
+```
+python -u run.py --num_gpus=1 --bert_config_file=./bert/sample/bert_config.json
+```
+2. test the model
+```
+python -u run.py --mode=test --init_checkpoint=checkpoint_2022-01-20-16-21-22 --checkpoint_file=best-0 --num_gpus=1 --coverage=false --use_pointer=false
+# you can replace 'checkpoint_2022-01-20-16-21-22' with your own training checkpoint
+```
+3. eval the model
+```
+python -u run.py --mode=eval --init_checkpoint=checkpoint_2022-01-20-16-21-22 --checkpoint_file=best-0 --num_gpus=1 --coverage=false --use_pointer=false
+# you can replace 'checkpoint_2022-01-20-16-21-22' with your own training checkpoint
+```
+4. configuration
+```
+1) `./bert/[sample|topic|topic_ltp]/bert_config.json` gives the train config files, you can follow our configurations.
+2) `./bert/[sample|topic|topic_ltp]/vocab.txt` gives the bert vocabulary files
+3) you can read `./run.py` to get more usage of our code.
+```
 
 
 ## Data
 
-We construct a Chinese large-scaletopic hashtag generation dataset (WHG) containing multiple areas from Weibo. It can be download at [google drive](https://drive.google.com/open?id=1vcJcVXKbVZ0z2acLjH3-e-qCLvFGpies). We also construct a English dataset from Twitter(THG).
+We construct a Chinese large-scaletopic hashtag generation dataset (WHG) containing multiple areas from Weibo. It can be download at [google drive](https://drive.google.com/open?id=1vcJcVXKbVZ0z2acLjH3-e-qCLvFGpies), and you can open them with IDE(e.g. vscode, pycharm) or vim. We also construct a English dataset from Twitter(THG).
 
 ### Preview
 
