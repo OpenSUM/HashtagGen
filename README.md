@@ -63,7 +63,7 @@ Table 1: Data of WHG
 
 WeiBo: WHG Dataset|Train|Dev|Test
 -------|-----|---|----
-Count |312,762| 20,000| 20,000
+Count |312,762| 2,000| 2,000
 AvgSourceLen (+W) |75.1| 75.3 |75.6
 CovSourceLen(95%)(+W) |141| 137 |145
 AvgTargetLen(+W) |54.2 |4.2| 4.2
@@ -73,7 +73,7 @@ Table 2: Data of THG
 
 Twitter: THG Dataset|Train|Dev|Test
 -------|-----|---|----
-Count |204,039| 11,335| 11,336
+Count |222,709| 2,000 | 2,000
 AvgSourceLen  |23.5 |23.8 |23.5
 CovSourceLen(95%)| 46 |47 |46
 AvgTargetLen|10.1| 10.0 |10.0
