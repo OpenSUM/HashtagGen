@@ -80,3 +80,14 @@ AvgTargetLen|10.1| 10.0 |10.0
 CovTargetLen(95%)| 30 |30| 30
 
 
+## Cite
+@article{MAO2022109581,
+title = {Attend and select: A segment selective transformer for microblog hashtag generation},
+journal = {Knowledge-Based Systems},
+pages = {109581},
+year = {2022},
+issn = {0950-7051},
+doi = {https://doi.org/10.1016/j.knosys.2022.109581},
+url = {https://www.sciencedirect.com/science/article/pii/S0950705122007973},
+author = {Qianren Mao and Xi Li and Bang Liu and Shu Guo and Peng Hao and Jianxin Li and Lihong Wang},
+}
