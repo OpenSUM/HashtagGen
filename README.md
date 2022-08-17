@@ -44,7 +44,9 @@ python -u run.py --mode=eval --init_checkpoint=checkpoint_2022-01-20-16-21-22 --
 
 ## Data
 
-We construct a Chinese large-scaletopic hashtag generation dataset (WHG) containing multiple areas from Weibo. It can be download at [google drive](https://drive.google.com/open?id=1vcJcVXKbVZ0z2acLjH3-e-qCLvFGpies), and you can open them with IDE(e.g. vscode, pycharm) or vim. We also construct a English dataset from Twitter(THG).
+We construct a Chinese large-scaletopic hashtag generation dataset (WHG) containing multiple areas from Weibo. It can be download at [google drive](https://drive.google.com/open?id=1vcJcVXKbVZ0z2acLjH3-e-qCLvFGpies), and you can open them with IDE(e.g. vscode, pycharm) or vim. We also construct a English dataset from Twitter(THG). If you want to acquire the THG corpus, please contact us, you will download the application form
+and fill, then fax or e-mail. Contacts: Qianren Mao ( maoqr@act.buaa.edu.cn, cs: qianrenmao@gmail.com )
+
 
 ### Preview
 
