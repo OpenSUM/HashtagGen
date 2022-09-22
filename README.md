@@ -42,10 +42,11 @@ python -u run.py --mode=eval --init_checkpoint=checkpoint_2022-01-20-16-21-22 --
 ```
 
 
-## Data
+## DataSet
 
-We construct a Chinese large-scaletopic hashtag generation dataset (WHG) containing multiple areas from Weibo. If you want to acquire the  WHG \& THG corpus, please contact us, you will download the application form
-and fill, then fax or e-mail. Contacts: Qianren Mao ( maoqr@act.buaa.edu.cn, cs: qianrenmao@gmail.com )
+We construct a Chinese large-scaletopic hashtag generation dataset (WHG) containing multiple areas from Weibo. If you want to acquire the  WHG \& THG corpus, please contact us, you will download the [application form](https://drive.google.com/file/d/1bZixZRQ8ypk-ZJByNl-juqyYR6NWiqBk/view?usp=sharing) and fill, then fax or e-mail. Contacts: Qianren Mao ( maoqr@act.buaa.edu.cn, cs: qianrenmao@gmail.com )
+
+
 
 
 ### Preview
